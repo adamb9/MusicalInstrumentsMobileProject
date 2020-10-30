@@ -1,29 +1,17 @@
 <resources>
-    <string name="app_name">MusicalInstrumentsMobileProject</string>
+    <string name="app_name">Musical Instruments Mobile Project</string>
 
     <string-array name="instruments">
-        <item>Piano</item>
+        <item>Accordion</item>
+        <item>Acoustic Guitar</item>
+        <item>Banjo</item>
         <item>Drums</item>
         <item>Electric Guitar</item>
-        <item>Acoustic Guitar</item>
-        <item>Saxophone</item>
         <item>Flute</item>
-        <item>Banjo</item>
-        <item>Trumpet</item>
-        <item>Accordion</item>
         <item>Harp</item>
+        <item>Piano</item>
+        <item>Saxophone</item>
+        <item>Trumpet</item>
     </string-array>
 
-    <string-array name="description">
-        <item>Random Description</item>
-        <item>Random Description</item>
-        <item>Random Description</item>
-        <item>Random Description</item>
-        <item>Random Description</item>
-        <item>Random Description</item>
-        <item>Random Description</item>
-        <item>Random Description</item>
-        <item>Random Description</item>
-        <item>Random Description</item>
-    </string-array>
 </resources>
