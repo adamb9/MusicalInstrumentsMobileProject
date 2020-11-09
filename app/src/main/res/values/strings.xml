@@ -14,4 +14,32 @@
         <item>Trumpet</item>
     </string-array>
 
+    <string-array name="funfacts">
+        <item>An accordion can also be known as a Squeezebox!</item>
+        <item>The first guitar was created in Ancient Egypt!</item>
+        <item>The banjo was invented in the 17th century by West Africans in the Caribbean</item>
+        <item>Drumming can burn more calories in half an hour than cycling or hiking!</item>
+        <item>An electric guitar once owned by Eric Clapton was sold for $959,500 in 2004!</item>
+        <item>George Washington played the flute!</item>
+        <item>The harp has been Irelands national symbol since the 13th century!</item>
+        <item>The worlds largest piano weighs 1.4 tonnes!</item>
+        <item>The saxophone was invented by Adolphe Sax in the 1800s!</item>
+        <item>In 2005 Toyota debuted a trumpet playing robot!</item>
+    </string-array>
+
+    <string-array name="wikilinks">
+        <item>https://en.wikipedia.org/wiki/Accordion</item>
+        <item>https://en.wikipedia.org/wiki/Acoustic_guitar</item>
+        <item>https://en.wikipedia.org/wiki/Banjo</item>
+        <item>https://en.wikipedia.org/wiki/Drum_kit</item>
+        <item>https://en.wikipedia.org/wiki/Electric_guitar</item>
+        <item>https://en.wikipedia.org/wiki/Flute</item>
+        <item>https://en.wikipedia.org/wiki/Harp</item>
+        <item>https://en.wikipedia.org/wiki/Piano</item>
+        <item>https://en.wikipedia.org/wiki/Saxophone</item>
+        <item>https://en.wikipedia.org/wiki/Trumpet</item>
+    </string-array>
+
+    <string name="wikiButton">Wikipedia</string>
+    <string name="soundButton">Play Sound!</string>
 </resources>
