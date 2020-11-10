@@ -7,6 +7,14 @@ public class Item_class {
     private int image;
     private int sound;
 
+    public Item_class(String name, String fact, String link, int image, int sound) {
+        this.name = name;
+        this.fact = fact;
+        this.link = link;
+        this.image = image;
+        this.sound = sound;
+    }
+
     public String getName() {
         return name;
     }
