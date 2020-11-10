@@ -2,7 +2,11 @@ package com.example.musicalinstrumentsmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,7 +19,7 @@ public class SecondActivity extends AppCompatActivity {
     Button wikiButton, soundButton;
 
     String myTitle, myFact, myLink;
-    int myImage;
+    int myImage, mySound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,25 @@ public class SecondActivity extends AppCompatActivity {
 
         getData();
         setData();
+
+        wikiButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse(myLink));
+                startActivity(intent);
+            }
+        });
+
+        final MediaPlayer mp = MediaPlayer.create(this, mySound);
+        soundButton.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v) {
+                mp.start();
+            }
+        });
+
     }
 
     private void getData(){
@@ -39,6 +62,7 @@ public class SecondActivity extends AppCompatActivity {
             myFact = getIntent().getStringExtra("myFact");
             myLink = getIntent().getStringExtra("myLink");
             myImage = getIntent().getIntExtra("myImage", 1);
+            mySound = getIntent().getIntExtra("mySound", 2);
         }
         else{
             Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
@@ -50,4 +74,6 @@ public class SecondActivity extends AppCompatActivity {
         instrumentFact.setText(myFact);
         mainImageView.setImageResource(myImage);
     }
+
+
 }

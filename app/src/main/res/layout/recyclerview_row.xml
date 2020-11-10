@@ -17,7 +17,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/brightBlue">
 
             <TextView
                 android:id="@+id/instrument_txt"
@@ -29,6 +30,7 @@
                 android:layout_marginEnd="120dp"
                 android:layout_marginRight="120dp"
                 android:text="TextView"
+                android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"

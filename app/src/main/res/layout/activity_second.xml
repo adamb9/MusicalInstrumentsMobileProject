@@ -5,6 +5,8 @@
     android:id="@+id/secondActivityConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/brightBlue"
+
     tools:context=".SecondActivity">
 
     <Button
@@ -12,6 +14,8 @@
         android:layout_width="150sp"
         android:layout_height="70dp"
         android:text="@string/soundButton"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/blueVariant"
         app:layout_constraintBottom_toBottomOf="@+id/wikiButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -23,6 +27,8 @@
         android:layout_height="70dp"
         android:layout_marginBottom="144dp"
         android:text="@string/wikiButton"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/blueVariant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/soundButton"
         app:layout_constraintHorizontal_bias="0.5"
@@ -39,6 +45,7 @@
         android:layout_marginRight="32dp"
         android:gravity="center_horizontal"
         android:text="TextView"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,6 +58,7 @@
         android:layout_marginTop="38dp"
         android:gravity="center_horizontal"
         android:text="TextView"
+        android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/secondActivityImageView"

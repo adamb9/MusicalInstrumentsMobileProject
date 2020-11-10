@@ -41,5 +41,5 @@
     </string-array>
 
     <string name="wikiButton">Wikipedia</string>
-    <string name="soundButton">Play Sound!</string>
+    <string name="soundButton"> Play Sound!</string>
 </resources>

@@ -21,14 +21,16 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     String facts[];
     String wikis[];
     int images[];
+    int sounds[];
     Context context;
 
-    public MyRecyclerViewAdapter(Context ct, String s1[],String s2[], String s3[], int img[]){
+    public MyRecyclerViewAdapter(Context ct, String s1[],String s2[], String s3[], int img[], int snd[]){
         context = ct;
         instrumentNames = s1;
         facts = s2;
         wikis = s3;
         images = img;
+        sounds = snd;
     }
 
     @NonNull
@@ -52,6 +54,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
                 intent.putExtra("myImage", images[position]);
                 intent.putExtra("myFact", facts[position]);
                 intent.putExtra("myLink", wikis[position]);
+                intent.putExtra("mySound", sounds[position]);
                 context.startActivity(intent);
             }
         });
